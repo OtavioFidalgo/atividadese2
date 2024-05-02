@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Impar</title>
+</head>
+<body>
+    <h1>Descubra se é Par ou Impar</h1>
+    <p>Número: <span id="num"></span></p>
+    <p>Resultado: <span id="resul"></span></p>
+
+    <script>
+        let num;
+        let resul;
+        let conta;
+
+        num = Number(prompt("Digite o número que deseja verificar se é par ou impar."));
+
+        conta = (num % 2)
+
+        if (conta == 0){
+            resul = "Par"
+        }else{
+            resul = "Impar"
+        }
+
+
+        document.getElementById('num').innerHTML = num;
+        document.getElementById('resul').innerHTML = resul;
+
+
+    </script>
+    
+</body>
+</html>

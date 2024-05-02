@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premio</title>
+</head>
+<body>
+    <h1>Descubra se o Funcionário conseguiu o Premio</h1>
+    <p>Nome do funcionário: <span id="nome"></span></p>
+    <p>Meta do funcionário: <span id="meta"></span></p>
+    <p>lavor de vendas: <span id="venda"></span></p>
+    <p>Conseguiu o Prêmio? <span id="premio"></span></p>
+
+    <script>
+        let nome;
+        let meta;
+        let venda;
+        let premio;
+
+        nome = prompt("Digite o nome do funcionário.")
+        meta = Number(prompt("Digite o valor da meta que o funcionário precisa alcançar."));
+        venda = Number(prompt("Digite o valor de vendas que o funcionário fez."));
+
+        if (meta <= venda){
+            premio = "Sim"
+        }else{
+            premio = "Não"
+        }
+
+
+        document.getElementById('nome').innerHTML = nome;
+        document.getElementById('meta').innerHTML = meta;
+        document.getElementById('venda').innerHTML = venda;
+        document.getElementById('premio').innerHTML = premio;
+
+
+
+
+    </script>
